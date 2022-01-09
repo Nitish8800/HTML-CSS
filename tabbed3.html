@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            width: 80%;
+            margin: auto;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+            background-color: black;
+            color: white;
+            padding: 0px 20px;
+            font-family: sans-serif;
+        }
+        .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .nav-links{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        a{
+            text-decoration: none;
+            color: #f2f2f2;
+            padding: 10px 18px;
+            border-radius: 10px;
+        }
+        .nav-links li a:hover{
+            background-color: #636b74;
+        }
+        .drop-menu{
+            list-style: none;
+            background-color: #116ecc;
+            padding: 0px 0px;
+            
+            position: absolute;
+            top: 60px;
+            opacity: 0;
+            visibility: none;
+        }
+        .nav-links li:hover .drop-menu{
+            opacity: 1;
+            visibility: visible; 
+        }
+        .drop-menu li a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo"><a href="#">E.VIJENDRA</a></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#" class="unique">Dropdown Menu</a>
+                <ul class="drop-menu">
+                    <li><a href="#">Drop menu 1</a></li>
+                    <li><a href="#">Drop menu 2</a></li>
+                    <li><a href="#">Drop menu 3</a></li>
+                    <li><a href="#">Drop menu 4</a></li>
+                </ul>
+            
+            </li>
+            <li><a href="#">Mega Menu</a></li>
+            <li><a href="#">Feeback</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>King of empire</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita iure ipsum et fuga corrupti, modi, magni ab nemo excepturi dolor eos, impedit voluptate optio unde quidem molestiae dolorem. Consequuntur, reprehenderit maxime voluptatibus omnis ab quasi illum recusandae esse beatae nihil id obcaecati ipsum repellat voluptatum maiores neque ullam, harum distinctio?</p>
+    </div>
+</body>
+</html>

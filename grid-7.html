@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Grid</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        font-weight: bolder;
+      }
+
+      .container {
+        width: 40%;
+        color: white;
+        margin: auto;
+        display: grid;
+        grid-gap: 20px;
+        padding: 10px;
+        border: 5px solid brown;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template:
+          "a a a a"
+          "a a a a"
+          "b b c c"
+          "b b c c"
+          "b b d d"
+          "b b d d"
+          "e e e e"
+          "e e e e"
+          "e e e e"
+          "e e e e"
+          "e e e e"
+          "e e e e"
+          "e e e e"
+          "e e e e"
+          "f f f f"
+          "f f f f";
+      }
+
+      .container div {
+        background: rgb(61, 64, 91);
+        font-size: 60px;
+        text-align: center;
+      }
+
+      #item1 {
+        grid-area: a;
+      }
+
+      #item2 {
+        grid-area: b;
+      }
+
+      #item3 {
+        grid-area: c;
+      }
+
+      #item4 {
+        grid-area: d;
+      }
+
+      #item5 {
+        grid-area: e;
+      }
+      #item6 {
+        grid-area: f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="item1">Header</div>
+      <div id="item2">Article</div>
+      <div id="item3">Text 1</div>
+      <div id="item4">Text 2</div>
+      <div id="item5">Main</div>
+      <div id="item6">Footer</div>
+    </div>
+  </body>
+</html>
