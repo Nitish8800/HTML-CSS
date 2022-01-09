@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: sans-serif;
+        font-weight: 500;
+      }
+      body {
+        background-color: black;
+      }
+      #container {
+        height: 600px;
+        width: 850px;
+
+        margin: auto;
+        display: flex;
+        margin-top: 50px;
+        background-color: white;
+      }
+
+      .box1 {
+        height: 450px;
+        width: 350px;
+
+        margin: auto;
+        padding-left: 20px;
+      }
+      .box2 {
+        height: 320px;
+        width: 250px;
+
+        margin: auto;
+        background-color: black;
+        margin-top: 95px;
+        color: white;
+        padding-left: 30px;
+      }
+
+      input {
+        height: 35px;
+        width: 250px;
+        border: 1px solid black;
+        margin-bottom: 8px;
+      }
+
+      div p {
+        font-weight: bolder;
+        margin-bottom: 5px;
+      }
+      #red {
+        color: red;
+        margin-top: auto;
+        margin-bottom: 25px;
+      }
+
+      button {
+        height: 40px;
+        width: 250px;
+
+        color: white;
+        background-color: rgb(0, 0, 0);
+        font-size: 23px;
+        font-weight: normal;
+        margin: auto;
+        cursor: pointer;
+      }
+
+      .box2 p {
+        font-weight: lighter;
+        font-size: larger;
+      }
+
+      .masai {
+        margin-top: auto;
+        font-size: 40px;
+        margin-bottom: 25px;
+      }
+
+      .name {
+        margin-top: 50px;
+      }
+
+      .add {
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="box1">
+        <p>NAME</p>
+        <input type="text" />
+        <p>EMAIL</p>
+        <input type="text" />
+        <p>MOBILE</p>
+        <input type="text" />
+        <p id="red">Enter a valid mobile</p>
+
+        <button>REGISTER</button>
+      </div>
+      <div class="box2">
+        <p class="p name">NAME</p>
+        <h1 class="masai">MASAI</h1>
+        <p class="p">EMAIL</p>
+        <p class="p add">email@masai.school.com</p>
+        <p class="p">MOBILE</p>
+        <p class="p add">9876543210</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <style>
+
+*{
+    margin: 0;
+    padding: 0;
+  
+}
+
+#Container{
+
+    width: 70%;
+    margin: auto;
+}
+
+.heading{
+    width: 40%;
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: auto;
+    /* text-align: justify; */
+    text-align: center;
+    padding: 10px 0px;
+    line-height: 2.7em;
+}
+
+.paragraph{
+    color: rgb(4, 87, 87);
+    width: 60%;  
+    line-height: 1.5em;
+
+}
+
+
+#main{
+ 
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: auto;
+}
+
+
+
+.box{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    text-align: center;
+ margin-top: 50px;
+}
+
+.box>div{
+     font-family: sans-serif;
+    color: rgb(165, 13, 13);
+}
+
+.box>div>p:nth-child(2){
+   margin-top: 3px;
+    color: green;
+}
+
+.box > h2,p{
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+.box > p{
+        padding: 0 20px;
+        line-height: 25px;
+        margin-top: 50px;
+        color: teal;
+        justify-content: space-between;
+}
+
+
+
+button{
+        background-color: transparent;
+        border: 1px solid blue;
+        color: blue;
+        font-weight: bold;
+        padding: 10px 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 30px;
+}
+
+#orange{
+    color: orange;
+    
+}
+
+#blue{
+color: rgb(115, 143, 219);
+}
+
+button:hover {
+        background-color: blue;
+        color: white;
+      }
+
+
+
+      @media only screen and (min-width: 375px) and (max-width: 768px) {
+        #main {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media only screen and (min-width: 0px) and (max-width: 375px) {
+        #main {
+          width: 100%;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <div id="Container">
+      <div class="heading">  <h1>Choose plan that right for your Buisness</h1> </div>
+    <div class="paragraph heading">    <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really like!</p> 
+    </div>
+    
+    <div id="main">
+
+<div class="box">
+
+ 
+    <h2>Starter Plan</h2>
+    <div><h2>Free</h2>
+        <p> <i>Per month</i> </p></div>
+  <p>We Collect reviews from our users so you can get an honest opionon of what an experience with our website. </p>
+    <button>Start Now</button>
+  
+
+
+</div>
+<div class="box">
+    <h2 >Buisness Plan</h2>
+    <div id="orange"><h2>$39.00</h2>
+        <p><i>Per month</i></p></div>
+  <p>We Collect reviews from our users so you can get an honest opionon of what an experience with our website. </p>
+    <button>Start Now</button>
+  
+
+</div>
+<div class="box">
+    <h2>Premium Plan</h2>
+    <div id="blue"><h2>$59.00</h2>
+        <p><i>Per month</i></p></div>
+  <p>We Collect reviews from our users so you can get an honest opionon of what an experience with our website. </p>
+    <button >Start Now</button>
+  
+
+</div>
+
+
+
+     </div>
+    </div>
+    </div>
+
+
+    
+</body>
+</html>

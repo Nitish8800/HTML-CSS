@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slack</title>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .container {
+        border: 1px solid blueviolet;
+        width: 90%;
+        height: 700px;
+        margin: auto;
+        background-color: white;
+        flex-grow: 1;
+      }
+
+      .container > div {
+        width: 42%;
+        height: 180px;
+        margin: auto;
+        /* border: 1px solid green; */
+        text-align: center;
+      }
+
+      p {
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: large;
+      }
+
+      h2,
+      h3 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #firstrow {
+        height: 210px;
+        width: 70%;
+        display: flex;
+        margin: auto;
+        margin-top: -2%;
+        flex-grow: 1;
+      }
+
+      .col_1 {
+        width: 40%;
+        height: 100%;
+        text-align: left;
+        margin: auto;
+      }
+      .col_2 {
+        width: 40%;
+        height: 100%;
+        text-align: left;
+        margin: auto;
+      }
+
+      #hr {
+        width: 80%;
+        height: 10%;
+      }
+
+      .hr1 {
+        width: 32%;
+        float: left;
+        margin-left: 15em;
+        color: whitesmoke;
+        margin-bottom: 3%;
+      }
+
+      .hr2 {
+        width: 32%;
+        float: right;
+        margin-right: 15em;
+        color: whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2>Working and thiriving</h2>
+        <p>
+          We want people to thrive at Slack; we believe you do your best work
+          when you feel your best. Here are a just a few benefits we're proud to
+          provide our team with.
+        </p>
+      </div>
+
+      <div id="firstrow">
+        <div class="col_1">
+          <h3>Learning & Development</h3>
+          <p>
+            Recieve an annual allowance for professional development, plus a
+            monthly bonus you can use towards anything. That means anything: a
+            gym mambership, your pet sitter, a new work look. Whatever matters
+            most to you.
+          </p>
+        </div>
+        <div class="col_2">
+          <h3>Health & Wellness</h3>
+          <p>
+            Free medica, dental care and eye care for you and your family -
+            Slack pays 100% of your premiums.
+          </p>
+        </div>
+      </div>
+
+      <hr class="hr1" />
+      <hr class="hr2" />
+
+      <div id="firstrow">
+        <div class="col_1">
+          <h3>Learning & Development</h3>
+          <p>
+            Free medica, dental care and eye care for you and your family -
+            Slack pays 100% of your premiums.
+          </p>
+        </div>
+        <div class="col_2">
+          <h3>Health & Wellness</h3>
+          <p>
+            Recieve an annual allowance for professional development, plus a
+            monthly bonus you can use towards anything. That means anything: a
+            gym mambership, your pet sitter, a new work look. Whatever matters
+            most to you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

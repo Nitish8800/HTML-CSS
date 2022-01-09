@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      body {
+        background-color: whitesmoke;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 530px);
+        grid-template-rows: repeat(2,260px);
+        grid-gap: 20px;
+        padding: 20px;
+        height: 650px;
+        justify-content: center;
+        align-content: center;
+     
+      
+        }
+
+   
+
+
+      .text > h1 {
+        font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        font-size: 27px;  
+        font-weight: bolder;
+        line-height: 5vh;
+        margin-top: -2%;
+         
+        
+      }
+
+      #tech{
+        color: brown;
+        font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+          font-weight: bold;
+      }
+
+
+#author{
+  color: rgb(6, 100, 100);
+}
+
+      #rightbox {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3,166px);
+        grid-gap: 3vh;
+      }
+
+    
+      .row {
+        display: grid;
+        grid-template-columns: repeat(2,46%);
+        
+      }
+
+h3{
+  font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+  font-size: 16px;        
+margin-top: -3%;  
+line-height: 1.4em;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img src="https://via.placeholder.com/530x360" alt="" />
+        <div   class="text">
+          <p id="tech">Technology</p> 
+          <h1>
+           The world's first fitness influencer was <br> a Victorian strongman
+          </h1>
+          <p id="author">by Pete Sariya</p>
+        </div>
+      </div>
+      <div id="rightbox">
+        <div class="row">
+          <img src="https://via.placeholder.com/230x170" alt="" />
+          <div>
+            <p id="tech">Technology</p>
+            <h3>
+             Needs to Rename the James Webb Space Telescope
+            </h3>
+            <p id="author">by Pete Sariya</p>
+          </div>
+        </div>
+      
+          <div class="row">
+            <img src="https://via.placeholder.com/230x170" alt="" />
+            <div>
+              <p id="tech">Technology</p>
+              <h3>
+               These striking photos capture the future of human flight
+              </h3>
+              <p id="author">by Pete Sariya</p>
+            </div>
+        </div>
+  
+          <div class="row">
+            <img src="https://via.placeholder.com/230x170" alt="" />
+            <div>
+              <p id="tech">Technology</p>
+              <h3>
+               Needs to Rename the James Webb Space Telescope
+              </h3>
+              <p id="author">by Pete Sariya</p>
+            </div>
+        </div>
+        </div>
+  </body>
+</html>

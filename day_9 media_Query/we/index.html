@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #page {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 600px;
+        grid-gap: 20px;
+        grid-template-areas:
+          "nav nav"
+          "left right";
+      }
+
+      #nav {
+        background-color: yellowgreen;
+        grid-area: nav;
+      }
+
+      #left {
+        background-color: red;
+        grid-area: left;
+      }
+
+      #right {
+        background-color: green;
+        grid-area: right;
+      }
+
+      @media only screen and (min-width: 375px) and (max-width: 768px) {
+        #page {
+          grid-template-areas:
+            "nav nav"
+            "right left";
+        }
+      }
+
+      @media only screen and (min-width: 0px) and (max-width: 375px) {
+        #page {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: 200px 300px 300px;
+          grid-template-areas:
+            "nav"
+            "right"
+            "left";
+        }
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <div id="nav">Navigation</div>
+      <div id="left">Left Box</div>
+      <div id="right">Right Box</div>
+    </div>
+  </body>
+</html>

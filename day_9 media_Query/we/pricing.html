@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 60%;
+        grid-gap: 20px;
+        margin: auto;
+      }
+      .container > div {
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      h2 {
+        color: green;
+        margin-bottom: 0px;
+      }
+      .container > div > p:nth-child(2n) {
+        padding: 0 20px;
+        line-height: 25px;
+        margin-top: 20px;
+      }
+      button {
+        background-color: transparent;
+        border: 1px solid blue;
+        color: blue;
+        font-weight: bold;
+        padding: 10px 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+      
+
+      button:hover {
+        background-color: blue;
+        color: white;
+      }
+
+ 
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3>Starter Plan</h3>
+        <h2>Free</h2>
+        <p><i>Per Month</i></p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+      <div>
+        <h3>Starter Plan</h3>
+        <h2>$39.00</h2>
+        <p><i>Per Month</i></p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+      <div>
+        <h3>Starter Plan</h3>
+        <h2>Free</h2>
+        <p><i>Per Month</i></p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+    </div>
+  </body>
+</html>

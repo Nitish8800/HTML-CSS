@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        border: 6px solid black;
+        display: flex;
+        flex-wrap: nowrap;
+        /* flex-direction: column;
+        flex-wrap: wrap; */
+        /* justify-content: space-evenly; */
+        /* flex-start/flex-end/center/space-between/space-around/space-evenly */
+        /* align-items: center; */
+        /* stretch/flex-start/flex-end/center */
+        /* align-content: stretch; */
+        /* stretch/flex-start/flex-end/space-between/space-around */
+      }
+      .flex-item {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* // 4 --> 2 1 1  */
+      .item-1 {
+        background-color: #b4bf35;
+        order: 0;
+        flex-basis: 400px;
+        /* // initial width for flex */
+      }
+      .item-2 {
+        background-color: #b95f21;
+        order: 0;
+      }
+      .item-3 {
+        background-color: #1c4c56;
+        order: 0;
+      }
+      .item-4 {
+        background-color: #cfb276;
+        order: 0;
+      }
+      .item-5 {
+        background-color: #6b0803;
+        order: 0;
+      }
+      .item-6 {
+        background-color: #1c4c56;
+        order: 0;
+      }
+      .item-7 {
+        background-color: #b95f21;
+        order: 0;
+      }
+      .item-8 {
+        background-color: #01243a;
+        order: 0;
+      }
+      .item-9 {
+        background-color: #aad041;
+        order: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-item item-1">Item 1</div>
+      <div class="flex-item item-2">Item 2</div>
+      <div class="flex-item item-3">Item 3</div>
+      <div class="flex-item item-4">Item 4</div>
+      <div class="flex-item item-5">Item 5</div>
+      <div class="flex-item item-6">Item 6</div>
+      <div class="flex-item item-7">Item 7</div>
+      <div class="flex-item item-8">Item 8</div>
+      <div class="flex-item item-9">Item 9</div>
+    </div>
+  </body>
+</html>
+
+<!-- Parent prop -->
+<!-- display **
+flex-direction-- row and column **
+flex-wrap--wrap **
+flex-flow--direction wrap
+justify-content -- horizontal spacing **
+align-items -- vertical spacing
+align-content ** -->
+
+<!-- Children properties
+order
+flex-grow
+flex-shrink
+flex-basis -->
